@@ -11,6 +11,7 @@ from pytorch_lightning import (  # For PyTorch Lightning framework
 from torch.nn import functional as F  # For functional API
 from torch.utils.data import DataLoader  # For data loading
 from model_load_save import load_model, save_model
+from datasets import load_dataset
 
 
 class Riichi(LightningModule):
@@ -18,6 +19,7 @@ class Riichi(LightningModule):
 
 
 if __name__ == "__main__":
+    dataset = load_dataset("pjura/mahjong_board_states", data_dir="data/2019/")
     model_path = "models/rchi.pth"
     model = Riichi()
     load_model(model=model, path=model_path)
