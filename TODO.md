@@ -5,7 +5,10 @@
 
 ## Understand the dataset.
 
+- [x] Download the dataset ✓
+- [ ] Visualize the dataset
 - [ ] Understand the dataset
 - [ ] Implement a dataset loader
 - [ ] Convert an entry to a game state
 - [ ] Convert a game state to an entry
+
