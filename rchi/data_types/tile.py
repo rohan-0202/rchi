@@ -3,9 +3,9 @@ from typing import Optional
 
 from rich import print
 
-from data_types.dragons import Dragon
-from data_types.suits import Suit
-from data_types.winds import Wind
+from rchi.data_types.dragons import Dragon
+from rchi.data_types.suits import Suit
+from rchi.data_types.winds import Wind
 
 
 @dataclass
