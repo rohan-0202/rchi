@@ -14,3 +14,5 @@
 - [ ] Convert an entry to a game state
 
 - [ ] Implement a game state to an entry converter
+
+- [ ] See the environment built in https://github.com/Agony5757/mahjong/tree/master/pymahjong
