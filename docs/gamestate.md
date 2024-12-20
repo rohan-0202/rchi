@@ -38,13 +38,13 @@ The following is required for a riichi mahjong game state:
 3. **Dora Information:**
 
    - Dora indicators (visible):** Crucial for scoring.
-   - **Ura dora indicators (hidden until riichi win):** Also important for scoring.
-   - **Kan dora indicators:** Should be considered if kans affect dora.
+   - *Ura dora indicators (hidden until riichi win):** Also important for scoring.
+   - *Kan dora indicators:** Should be considered if kans affect dora.
 
 4. **Table Stakes:**
 
-   - Riichi sticks count:** Needed for scoring.
-   - Tsumi sticks count:** Should be clarified; typically, tsumi refers to penalties, but in riichi, it might not be standard.
+   - *Riichi sticks count:** Needed for scoring.
+   - *Tsumi sticks count:** Should be clarified; typically, tsumi refers to penalties, but in riichi, it might not be standard.
 
 5. **Abort Conditions:**
 
