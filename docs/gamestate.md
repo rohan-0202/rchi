@@ -4,47 +4,47 @@ The following is required for a riichi mahjong game state:
 
 1. **Hand Information:**
 
-   - Hand tiles (13-14 tiles):** Correct. Note that the hand should always have 13 tiles, and drawing a 14th tile is part of the game flow.
-   - *Last drawn tile:** Useful for determining the winning tile or for the latest action.
-   - Exposed tiles (from chi, pon, kan calls):** Important for tracking melds.
-   - Open/closed status:** Indicates whether the player has exposed any tiles.
+   - Hand tiles (13-14 tiles):\*\* Correct. Note that the hand should always have 13 tiles, and drawing a 14th tile is part of the game flow.
+   - ~~Last drawn tile:~~ Useful for determining the winning tile or for the latest action.
+   - Exposed tiles (from chi, pon, kan calls):\*\* Important for tracking melds.
+   - Open/closed status:\*\* Indicates whether the player has exposed any tiles.
    - **Tenpai status:** Crucial for determining if the player is ready to win.
    - Discarded tiles: Needed for tracking the discard history.
-   - *Latest discard: Useful for recent actions.
+   - \*Latest discard: Useful for recent actions.
 
 2. **Player Status:**
-   - *Score:** Essential for tracking the game's progress.
-   - Seat wind position:** Important for scoring and hand values.
-   - *Riichi status:** Indicates if the player has declared riichi.
-   - *Ippatsu eligibility:** Should be tied to the riichi declaration.
-   - Dealing status (current dealer?):** Needed for round progression.
+   - ~~Score:~~ Essential for tracking the game's progress.
+   - Seat wind position: Important for scoring and hand values.
+   - ~~Riichi status:~~ Indicates if the player has declared riichi.
+   - \*Ippatsu eligibility:\*\* Should be tied to the riichi declaration.
+   - Dealing status (current dealer?):\*\* Needed for round progression.
    - **Furiten status:** Crucial for determining if a player is in a furiten state.
 
 ### Shared Game State:
 
 1. **Wall Information:**
 
-   - Remaining tiles in wall:** Important for determining the game's progression.
-   - *Dead wall count:** Needed for dora indicators and other game mechanics.
-   - Number of kans declared:** Influences the game's flow and scoring.
+   - Remaining tiles in wall:\*\* Important for determining the game's progression.
+   - \*Dead wall count:\*\* Needed for dora indicators and other game mechanics.
+   - Number of kans declared:\*\* Influences the game's flow and scoring.
 
 2. **Round Information:**
 
-   - Round wind:** Essential for scoring and hand values.
-   - Dealer position:** Needed for round progression.
-   - Current turn (whose turn is it):** Important for game flow.
+   - Round wind:\*\* Essential for scoring and hand values.
+   - Dealer position:\*\* Needed for round progression.
+   - Current turn (whose turn is it):\*\* Important for game flow.
    - **Current hand number in round:** Useful for tracking the progression within the round.
 
 3. **Dora Information:**
 
-   - Dora indicators (visible):** Crucial for scoring.
-   - *Ura dora indicators (hidden until riichi win):** Also important for scoring.
-   - *Kan dora indicators:** Should be considered if kans affect dora.
+   - Dora indicators (visible):\*\* Crucial for scoring.
+   - \*Ura dora indicators (hidden until riichi win):\*\* Also important for scoring.
+   - \*Kan dora indicators:\*\* Should be considered if kans affect dora.
 
 4. **Table Stakes:**
 
-   - *Riichi sticks count:** Needed for scoring.
-   - *Tsumi sticks count:** Should be clarified; typically, tsumi refers to penalties, but in riichi, it might not be standard.
+   - \*Riichi sticks count:\*\* Needed for scoring.
+   - \*Tsumi sticks count:\*\* Should be clarified; typically, tsumi refers to penalties, but in riichi, it might not be standard.
 
 5. **Abort Conditions:**
 

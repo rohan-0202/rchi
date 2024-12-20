@@ -1,7 +1,11 @@
-from data_types.tile import Tile
+from rchi.data_types.tile import Tile
 
 
 class PovPlayer:
+    """
+    Player class for the player who is viewing the game.
+    """
+
     def verifyhand(self, hand):
         pass
 

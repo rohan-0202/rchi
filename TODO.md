@@ -5,10 +5,12 @@
 
 ## Understand the dataset.
 
-- [x] Download the dataset ✓
-- [ ] Visualize the dataset
-- [ ] Understand the dataset
-- [ ] Implement a dataset loader
+- [x] ~~Download the dataset ✓~~
+- [x] ~~Understand the dataset~~
+- [x] ~~Implement a dataset loader~~
+- [ ] Represent the game state as a class
+- [ ] Think/Implement the actions that can be taken
+- [ ] think/implement the reward function
 - [ ] Convert an entry to a game state
-- [ ] Convert a game state to an entry
 
+- [ ] Implement a game state to an entry converter
