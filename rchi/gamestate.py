@@ -1,11 +1,7 @@
-from rchi.data_types.tile import Tile
+from data_types.tile import Tile
 
 
 class PovPlayer:
-    """
-    Player class for the player who is viewing the game.
-    """
-
     def verifyhand(self, hand):
         pass
 
@@ -68,7 +64,15 @@ class OtherPlayer:
 
 
 class Game:
-    def __init__(self, gamewind, dora: list[Tile], povwind, povhand):
+    def __init__(
+        self,
+        gamewind,
+        dora: list[Tile],
+        povwind,
+        povhand,
+        discards: list[list[Tile]],
+        melds: list[list[Tile]],
+    ):
         self.remaining_tiles = 70
         self.dora = dora
         self.players = []
@@ -80,11 +84,19 @@ class Game:
                         povwind,
                         gamewind,
                         povhand,
-                        [],
-                        [],
+                        discards[i],
+                        melds[i],
                     )
                 )
             else:
-                self.players.append(OtherPlayer(i[1], gamewind, [], [], False))
+                self.players.append(
+                    OtherPlayer(i[1], gamewind, discards[i], melds[i], False)
+                )
 
+        # has a small bug
+        # if a sequence overlaps with a triplet, that will be registered as a kan
         self.kans = 0
+        for i in melds:
+            for j in i:
+                if j == 4:
+                    self.kans += 1
