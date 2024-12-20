@@ -4,20 +4,20 @@ The following is required for a riichi mahjong game state:
 
 1. **Hand Information:**
 
-   - **Hand tiles (13-14 tiles):** Correct. Note that the hand should always have 13 tiles, and drawing a 14th tile is part of the game flow.
-   - **Last drawn tile:** Useful for determining the winning tile or for the latest action.
-   - **Exposed tiles (from chi, pon, kan calls):** Important for tracking melds.
-   - **Open/closed status:** Indicates whether the player has exposed any tiles.
+   - Hand tiles (13-14 tiles):** Correct. Note that the hand should always have 13 tiles, and drawing a 14th tile is part of the game flow.
+   - *Last drawn tile:** Useful for determining the winning tile or for the latest action.
+   - Exposed tiles (from chi, pon, kan calls):** Important for tracking melds.
+   - Open/closed status:** Indicates whether the player has exposed any tiles.
    - **Tenpai status:** Crucial for determining if the player is ready to win.
-   - **Discarded tiles:** Needed for tracking the discard history.
-   - **Latest discard:** Useful for recent actions.
+   - Discarded tiles: Needed for tracking the discard history.
+   - *Latest discard: Useful for recent actions.
 
 2. **Player Status:**
-   - **Score:** Essential for tracking the game's progress.
-   - **Seat wind position:** Important for scoring and hand values.
-   - **Riichi status:** Indicates if the player has declared riichi.
-   - **Ippatsu eligibility:** Should be tied to the riichi declaration.
-   - **Dealing status (current dealer?):** Needed for round progression.
+   - *Score:** Essential for tracking the game's progress.
+   - Seat wind position:** Important for scoring and hand values.
+   - *Riichi status:** Indicates if the player has declared riichi.
+   - *Ippatsu eligibility:** Should be tied to the riichi declaration.
+   - Dealing status (current dealer?):** Needed for round progression.
    - **Furiten status:** Crucial for determining if a player is in a furiten state.
 
 ### Shared Game State:
